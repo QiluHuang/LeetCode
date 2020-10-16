@@ -1,22 +1,46 @@
 package dLinkedList;
 
 public class Reversal {
+    /**
+     * 206. Reverse Linked List
+     */
     public static ListNode reverseList(ListNode head) {
         if (head == null) return null;
 
-        ListNode prev = null;
+        ListNode pre = null;
         ListNode curr = head;
-        ListNode next = head.next;
 
         while (curr != null) {
-            curr.next = prev;
-            prev = curr;
+            // mark the next node of curr node
+            ListNode next = curr.next;
+
+            // reverse
+            curr.next = pre;
+
+            // move
+            pre = curr;
             curr = next;
-            if (next != null) next = next.next;
         }
 
-        return prev;
+        return pre;
     }
+
+//    public static ListNode reverseList(ListNode head) {
+//        if (head == null) return null;
+//
+//        ListNode prev = null;
+//        ListNode curr = head;
+//        ListNode next = head.next;
+//
+//        while (curr != null) {
+//            curr.next = prev;
+//            prev = curr;
+//            curr = next;
+//            if (next != null) next = next.next;
+//        }
+//
+//        return prev;
+//    }
 
 
     /**

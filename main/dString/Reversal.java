@@ -1,6 +1,6 @@
 package dString;
 
-public class StringReversal {
+public class Reversal {
     /**
      * @Description Reverse Target Position
      * @Param str: the target string
@@ -30,6 +30,7 @@ public class StringReversal {
 //        }
 //
 //        return builder.toString();
+        
         return new String(arr);
     }
 

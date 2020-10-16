@@ -3,7 +3,7 @@ package dLinkedList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListTraversal {
+public class Traversal {
     public static List<Integer> traverseLinkedList(ListNode head) {
         List<Integer> res = new ArrayList<>();
 

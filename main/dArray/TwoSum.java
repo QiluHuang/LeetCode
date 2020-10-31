@@ -24,4 +24,14 @@ public class TwoSum {
 
         return false;
     }
+
+    public static boolean arraySum(List<Integer> inputs, List<Integer> tests) {
+        for (Integer sum : tests) {
+            for (Integer num : inputs) {
+                if (inputs.contains(sum - num)) return true;
+            }
+        }
+
+        return false;
+    }
 }

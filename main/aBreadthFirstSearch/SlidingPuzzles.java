@@ -1,4 +1,4 @@
-package aBreathFirstSearch;
+package aBreadthFirstSearch;
 
 import java.util.*;
 

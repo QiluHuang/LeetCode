@@ -1,8 +1,8 @@
-package oaSnowflake;
+package aSlidingWindow;
 
 import java.util.List;
 
-public class ADiskSpaceAnalysis {
+public class FindMaxInMinimum {
     /**
      *
      * @param x the length of analysis segments

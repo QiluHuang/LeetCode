@@ -1,6 +1,6 @@
 package dArray;
 
-
+/** Mosh Exercises */
 public class DynamicArray {
     private int[] arr;
     private int currLen = 0;  // keep track of the number of items in this array

@@ -1,10 +1,10 @@
 package aUnionFind;
 
-public class WeightedQuickUnion {
+public class WeightedQuickUnionWithPathCompression {
     int[] id;
     int[] size;
 
-    public WeightedQuickUnion(int N) {
+    public WeightedQuickUnionWithPathCompression(int N) {
         id = new int[N];
         size = new int[N];
         for (int i = 0; i < N; i++) {
@@ -36,8 +36,11 @@ public class WeightedQuickUnion {
 
     public int getRootId(int currId) {
         while (currId != id[currId]) {
+            // make every other node in path point to its grandparent(thereby halving path length)
+            id[currId] = id[id[currId]];
             currId = id[currId];
         }
         return currId;
     }
+
 }

@@ -1,5 +1,6 @@
 package dBinaryTree;
 
+/** 543. Diameter of Binary Tree */
 public class LongestDiameter {
     private static int maxDiameter;
 

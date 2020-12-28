@@ -47,4 +47,26 @@ public class Palindrome {
 
         return set.size() == 0 ? res : res + 1;
     }
+
+    /** 680. Valid Palindrome II */
+    public boolean validPalindrome(String s) {
+        return validPalindromeHelper(s, 0, s.length()-1, 1);
+    }
+
+    private boolean validPalindromeHelper(String s, int left, int right, int count) {
+        while (left < right) {
+            if (s.charAt(left) == s.charAt(right)) {
+                left++;
+                right--;
+            } else {
+                if (count == 1) {
+                    return validPalindromeHelper(s, left + 1, right, count - 1) || validPalindromeHelper(s, left, right - 1, count - 1);
+                } else {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 }

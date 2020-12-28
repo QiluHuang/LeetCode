@@ -1,7 +1,7 @@
 package dString;
 
 public class Addition {
-    // 415 Add Strings
+    /** 415 Add Strings */
     public static String addStrings(String num1, String num2) {
         StringBuilder builder = new StringBuilder();
 
@@ -21,7 +21,7 @@ public class Addition {
         return builder.reverse().toString();
     }
 
-    // 67 Add Binary
+    /** 67 Add Binary */
     public static String addBinary(String a, String b) {
         StringBuilder builder = new StringBuilder();
 

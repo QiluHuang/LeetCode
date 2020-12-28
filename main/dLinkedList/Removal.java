@@ -1,9 +1,7 @@
 package dLinkedList;
 
 public class Removal {
-    /**
-     * 19. Remove Nth Node From End of List
-     */
+    /** 19. Remove Nth Node From End of List */
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         if (head.next == null) return null;
 
